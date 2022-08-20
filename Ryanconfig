@@ -3,7 +3,7 @@
 #  创建者：https://v2rayse.com
 #  创建时间：2022-08-20 16:38:14
 #  模版：v2rayse默认模版
-#  节点数量：1
+#  节点数量：2
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -13,7 +13,10 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vmess","name":"MLCDN","ws-opts":{"path":"/MLCDN"},"server":"ryanniu.ml","port":"443","uuid":"d045d9b6-2fe7-4c1a-8fa0-b8ecf2303d65","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  #优选IP
+  - {"type":"vmess","name":"MLCDN","ws-opts":{"path":"/MLCDN","headers":{"host":"ryanniu.ml"}},"server":"172.67.253.78","port":"443","uuid":"d045d9b6-2fe7-4c1a-8fa0-b8ecf2303d65","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  #默认服务器
+  #- {"type":"vmess","name":"MLCDN","ws-opts":{"path":"/MLCDN","headers":{"host":"ryanniu.ml"}},"server":"ryanniu.ml","port":"443","uuid":"d045d9b6-2fe7-4c1a-8fa0-b8ecf2303d65","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"V2ray146","server":"146.56.153.74","port":"44064","uuid":"f900a8c7-0ce6-4438-81e4-58b9f30a7811","alterId":"0","cipher":"auto","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
