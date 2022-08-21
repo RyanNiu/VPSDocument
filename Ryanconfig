@@ -7,6 +7,7 @@
 #-------------------------------------------------------------#
 # 备选IP
 # IP 地址           已发送  已接收  丢包率  平均延迟  下载速度 (MB/s)
+# 140.207.80.7      4       4       0.00    8.57      14.25  
 # 47.52.101.237     4       4       0.00    50.06     21.63          
 # 8.218.50.208      4       4       0.00    117.04    20.72          
 # 20.187.81.100     4       3       0.25    123.25    14.96          
@@ -27,6 +28,7 @@ log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
   - {"type":"vmess","name":"MLCDN","ws-opts":{"path":"/MLCDN","headers":{"host":"ryanniu.ml"}},"server":"47.52.101.237","port":"443","uuid":"d045d9b6-2fe7-4c1a-8fa0-b8ecf2303d65","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"FAST","ws-opts":{"path":"/MLCDN","headers":{"host":"ryanniu.ml"}},"server":"140.207.80.7","port":"443","uuid":"d045d9b6-2fe7-4c1a-8fa0-b8ecf2303d65","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"V2ray146","server":"146.56.153.74","port":"44064","uuid":"f900a8c7-0ce6-4438-81e4-58b9f30a7811","alterId":"0","cipher":"auto","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
@@ -36,6 +38,7 @@ proxy-groups:
       - DIRECT
       - MLCDN
       - V2ray146
+      - FAST
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -44,6 +47,7 @@ proxy-groups:
     proxies:
       - MLCDN
       - V2ray146
+      - FAST
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -52,6 +56,7 @@ proxy-groups:
       - 🎯 全球直连
       - MLCDN
       - V2ray146
+      - FAST
   - name: 📲 电报信息
     type: select
     proxies:
@@ -59,6 +64,7 @@ proxy-groups:
       - 🎯 全球直连
       - MLCDN
       - V2ray146
+      - FAST
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -66,6 +72,7 @@ proxy-groups:
       - 🚀 节点选择
       - MLCDN
       - V2ray146
+      - FAST
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -73,6 +80,7 @@ proxy-groups:
       - 🎯 全球直连
       - MLCDN
       - V2ray146
+      - FAST
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -97,6 +105,7 @@ proxy-groups:
       - ♻️ 自动选择
       - MLCDN
       - V2ray146
+      - FAST
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
