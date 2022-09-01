@@ -30,7 +30,7 @@ proxies:
   - {"type":"vmess","name":"MLCDN","ws-opts":{"path":"/MLCDN","headers":{"host":"ryanniu.ml"}},"server":"47.52.101.237","port":"443","uuid":"d045d9b6-2fe7-4c1a-8fa0-b8ecf2303d65","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"FAST","ws-opts":{"path":"/MLCDN","headers":{"host":"ryanniu.ml"}},"server":"140.207.80.7","port":"443","uuid":"d045d9b6-2fe7-4c1a-8fa0-b8ecf2303d65","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"original","ws-opts":{"path":"/MLCDN","headers":{"host":"ryanniu.ml"}},"server":"47.52.101.237","port":"443","uuid":"d045d9b6-2fe7-4c1a-8fa0-b8ecf2303d65","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"V2ray146","server":"146.56.153.74","port":"44064","uuid":"f900a8c7-0ce6-4438-81e4-58b9f30a7811","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"V2ray146","server":"146.56.186.93","port":"17998","uuid":"b9b9ed97-92f9-48f6-eb1e-6f8776cda600","alterId":"0","cipher":"auto","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
