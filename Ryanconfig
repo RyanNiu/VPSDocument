@@ -30,7 +30,8 @@ proxies:
   - {"type":"vmess","name":"MLCDN","ws-opts":{"path":"/MLCDN","headers":{"host":"ryanniu.ml"}},"server":"47.52.101.237","port":"443","uuid":"d045d9b6-2fe7-4c1a-8fa0-b8ecf2303d65","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"FAST","ws-opts":{"path":"/MLCDN","headers":{"host":"ryanniu.ml"}},"server":"140.207.80.7","port":"443","uuid":"d045d9b6-2fe7-4c1a-8fa0-b8ecf2303d65","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"original","ws-opts":{"path":"/MLCDN","headers":{"host":"ryanniu.ml"}},"server":"47.52.101.237","port":"443","uuid":"d045d9b6-2fe7-4c1a-8fa0-b8ecf2303d65","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"V2ray146","server":"146.56.186.93","port":"17998","uuid":"b9b9ed97-92f9-48f6-eb1e-6f8776cda600","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"IP146","server":"146.56.186.93","port":"17998","uuid":"b9b9ed97-92f9-48f6-eb1e-6f8776cda600","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"CDN146","ws-opts":{"path":"/","headers":{"host":"r-ui.ml"}},"server":"47.52.101.237","port":"443","uuid":"a4e4059c-05f5-47aa-a794-b9283dfbc1bb","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -38,7 +39,8 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - MLCDN
-      - V2ray146
+      - IP146
+      - CDN146
       - FAST
       - original
   - name: ♻️ 自动选择
@@ -48,7 +50,8 @@ proxy-groups:
     tolerance: 50
     proxies:
       - MLCDN
-      - V2ray146
+      - IP146
+      - CDN146
       - FAST
       - original
   - name: 🌍 国外媒体
@@ -58,7 +61,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - MLCDN
-      - V2ray146
+      - IP146
+      - CDN146
       - FAST
       - original
   - name: 📲 电报信息
@@ -67,7 +71,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - MLCDN
-      - V2ray146
+      - IP146
+      - CDN146
       - FAST
       - original
   - name: Ⓜ️ 微软服务
@@ -76,7 +81,8 @@ proxy-groups:
       - 🎯 全球直连
       - 🚀 节点选择
       - MLCDN
-      - V2ray146
+      - IP146
+      - CDN146
       - FAST
       - original
   - name: 🍎 苹果服务
@@ -85,7 +91,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - MLCDN
-      - V2ray146
+      - IP146
+      - CDN146
       - FAST
       - original
   - name: 🎯 全球直连
@@ -111,7 +118,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - MLCDN
-      - V2ray146
+      - IP146
+      - CDN146
       - FAST
       - original
 rules:
