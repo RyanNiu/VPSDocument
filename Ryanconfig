@@ -3,7 +3,6 @@
 #  创建者：https://v2rayse.com
 #  创建时间：2022-08-20 16:38:14
 #  模版：v2rayse默认模版
-#  节点数量：4
 #-------------------------------------------------------------#
 # 备选IP
 # IP 地址           已发送  已接收  丢包率  平均延迟  下载速度 (MB/s)
@@ -30,8 +29,8 @@ proxies:
   - {"type":"vmess","name":"MLCDN","ws-opts":{"path":"/MLCDN","headers":{"host":"ryanniu.ml"}},"server":"47.52.101.237","port":"443","uuid":"d045d9b6-2fe7-4c1a-8fa0-b8ecf2303d65","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"FAST","ws-opts":{"path":"/MLCDN","headers":{"host":"ryanniu.ml"}},"server":"140.207.80.7","port":"443","uuid":"d045d9b6-2fe7-4c1a-8fa0-b8ecf2303d65","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"original","ws-opts":{"path":"/MLCDN","headers":{"host":"ryanniu.ml"}},"server":"47.52.101.237","port":"443","uuid":"d045d9b6-2fe7-4c1a-8fa0-b8ecf2303d65","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"IP146","server":"146.56.186.93","port":"17998","uuid":"b9b9ed97-92f9-48f6-eb1e-6f8776cda600","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"CDN146","server":"r-ui.ml","port":46181,"uuid":"f7a6f20b-2206-4ee8-c5f5-b8787145ee26","alterId":0,"cipher":"auto","network":"tcp","tls":true}
+  - {"type":"vmess","name":"IP146","server":"146.56.186.93","port":17998,"uuid":"b9b9ed97-92f9-48f6-eb1e-6f8776cda600","alterId":0,"cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"CDN146","ws-opts":{"path":"/","headers":{"host":"r-ui.ml"}},"server":"r-ui.ml","port":8443,"uuid":"f7a6f20b-2206-4ee8-c5f5-b8787145ee26","alterId":0,"cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
